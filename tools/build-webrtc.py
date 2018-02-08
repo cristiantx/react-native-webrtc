@@ -17,7 +17,7 @@ ANDROID_CPU_ABI_MAP = {
     'x64'   : 'x86_64'
 }
 ANDROID_BUILD_CPUS = ['arm', 'x86']
-IOS_BUILD_ARCHS = ['arm', 'arm64','x64','x86']
+IOS_BUILD_ARCHS = ['arm', 'arm64']
 
 GN_IOS_ARGS = """--args='ios_enable_code_signing=false is_component_build=false is_debug=%s rtc_libvpx_build_vp9=true enable_ios_bitcode=false enable_dsyms=true ios_deployment_target="9.0" target_cpu="%s" target_os="ios"'"""
 GN_ANDROID_ARGS = """--args='is_component_build=false is_debug=%s rtc_libvpx_build_vp9=true target_cpu="%s" target_os="android"'"""
